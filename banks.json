@@ -1,0 +1,352 @@
+[
+ {
+  "bankId": "P640",
+  "managedBy": "Abinaya Murugesan",
+  "bankName": "FinTrust Bank",
+  "ifsc": "ABIN0K7M2QY",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P658",
+  "managedBy": "Akshaya Punitharajan",
+  "bankName": "Zentro Bank",
+  "ifsc": "AKSH0R4N8WX",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P675",
+  "managedBy": "Amirthapriyan Jayabalan",
+  "bankName": "Evergreen Bank",
+  "ifsc": "AMIR0B6T3XY",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P625",
+  "managedBy": "Anjali Poilath",
+  "bankName": "Cosmora Bank",
+  "ifsc": "ANJA0H9L5PQ",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P643",
+  "managedBy": "Artheesh Velmurugan",
+  "bankName": "Cashzilla Bank",
+  "ifsc": "ARTH0C2V7DK",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P635",
+  "managedBy": "Bhuvanesh Palanisamy",
+  "bankName": "Money Heist Bank",
+  "ifsc": "BHUV0M8F4JQ",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P649",
+  "managedBy": "Deekshaa Penkeesu",
+  "bankName": "Velora Bank",
+  "ifsc": "DEEK0W3A6KR",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P655",
+  "managedBy": "Deepika Maragathavel",
+  "bankName": "Isha Bank",
+  "ifsc": "DEEP0D5Y9RT",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P653",
+  "managedBy": "Dewansh Anirudh",
+  "bankName": "Dholakpur Bank",
+  "ifsc": "DEWA0N7P2BX",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P672",
+  "managedBy": "Gayathri Dhandapani",
+  "bankName": "Sapphire Bank",
+  "ifsc": "GAYA0T4G8LM",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P650",
+  "managedBy": "Girivasan Muthupalani",
+  "bankName": "Ambani Bank",
+  "ifsc": "GIRI0F6K3MN",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P665",
+  "managedBy": "Gopikasree Ganesan",
+  "bankName": "Altura Bank",
+  "ifsc": "GOPI0Q8R5NP",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P659",
+  "managedBy": "Gopikrishnan Ajith",
+  "bankName": "GK-BANK",
+  "ifsc": "GOPI0J2W7XZ",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P628",
+  "managedBy": "Gugaan Sanmugasundaram",
+  "bankName": "Gotham Federal Bank",
+  "ifsc": "GUGA0L9B4CQ",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P644",
+  "managedBy": "Hanisha Chandrasekaran",
+  "bankName": "Affinity Bank",
+  "ifsc": "HANI0P3D8FV",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P656",
+  "managedBy": "Harish Srinivasa",
+  "bankName": "ADFC bank",
+  "ifsc": "HARI0V5M2KW",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P639",
+  "managedBy": "Harismita Radhakrishnan",
+  "bankName": "Paisa Bank",
+  "ifsc": "HARI0A7N6QX",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P641",
+  "managedBy": "Harrinishree Murugabharathi",
+  "bankName": "Richie Rich Bank",
+  "ifsc": "HARR0C4T9WY",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P634",
+  "managedBy": "Harshavarthini Eswaramurthy",
+  "bankName": "Noble Trust Bank",
+  "ifsc": "HARS0G8Y3DZ",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P631",
+  "managedBy": "Heeranya Rajagopal",
+  "bankName": "Monarch Bank",
+  "ifsc": "HEER0K2P6RA",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P666",
+  "managedBy": "Hemadharshini Kannan",
+  "bankName": "Hexa Bank",
+  "ifsc": "HEMA0N5F9JB",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P638",
+  "managedBy": "Jayaharini Radhakrishnan",
+  "bankName": "AMJH Bank",
+  "ifsc": "JAYA0B7M4XC",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P657",
+  "managedBy": "Jebin Santhosh",
+  "bankName": "Fleeca Bank",
+  "ifsc": "JEBI0D3Q8LP",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P624",
+  "managedBy": "Jeevan Adithya",
+  "bankName": "Century Trust Bank",
+  "ifsc": "JEEV0R6W2PT",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P633",
+  "managedBy": "Jothees Balamurali",
+  "bankName": "JD Bank",
+  "ifsc": "JOTH0F9K5AM",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P661",
+  "managedBy": "Karthikeyan Deviprasad",
+  "bankName": "RIP Money Bank",
+  "ifsc": "KART0M4N7CQ",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P630",
+  "managedBy": "Kaushika Gowrisankar",
+  "bankName": "Rootwise Bank",
+  "ifsc": "KAUS0Y2D8GF",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P647",
+  "managedBy": "Keerthana Vijayakannan",
+  "bankName": "Credenza Bank",
+  "ifsc": "KEER0P6L3VX",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P668",
+  "managedBy": "Krithika Giri",
+  "bankName": "Meridian Bank",
+  "ifsc": "KRIT0W8B5NZ",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P664",
+  "managedBy": "Madhumitha Manavazhgan",
+  "bankName": "Avengers Bank",
+  "ifsc": "MADH0C7R2JQ",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P667",
+  "managedBy": "Mageshwaran Rajendran",
+  "bankName": "Maverick bank",
+  "ifsc": "MAGE0N4X9FP",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P663",
+  "managedBy": "Mahalakshmi Vetrivel",
+  "bankName": "The North Bank",
+  "ifsc": "MAHA0K6P3DY",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P642",
+  "managedBy": "Mehaa Eswaran",
+  "bankName": "Nexora Bank",
+  "ifsc": "MEHA0Q5T8WX",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P662",
+  "managedBy": "Mohamed Fayazdeen",
+  "bankName": "Reserve Bank of Delusions",
+  "ifsc": "MOHA0B2L7RT",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P626",
+  "managedBy": "Nevatha Vadivelu",
+  "bankName": "Happy Bank",
+  "ifsc": "NEVA0F9M4KQ",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P646",
+  "managedBy": "Nishanthi Ramarajan",
+  "bankName": "Nizzus Bank",
+  "ifsc": "NISH0D6Y3PX",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P652",
+  "managedBy": "Perumal Senthil",
+  "bankName": "FinEdge Bank",
+  "ifsc": "PERU0G8N2AV",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P654",
+  "managedBy": "Radha Alagarsamy",
+  "bankName": "Rupex Bank",
+  "ifsc": "RADH0J5W7CQ",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P637",
+  "managedBy": "Ramkumar Lakshmanan",
+  "bankName": "yellow Bank",
+  "ifsc": "RAMK0L3Q9XZ",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P669",
+  "managedBy": "Rishwanth Dondeti",
+  "bankName": "Hawala Bank",
+  "ifsc": "RISH0P7F4MN",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P636",
+  "managedBy": "Sanjayraj Ravichandran",
+  "bankName": "Iris Bank",
+  "ifsc": "SANJ0V2K8DY",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P671",
+  "managedBy": "Shanmugapriya Palanivel",
+  "bankName": "Orvex Bank",
+  "ifsc": "SHAN0R6B3TK",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P648",
+  "managedBy": "Sowndhariya Saravanan",
+  "bankName": "Lyra Bank",
+  "ifsc": "SOWN0M9C5JQ",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P629",
+  "managedBy": "Sriram Thennarasan",
+  "bankName": "Nexus Bank",
+  "ifsc": "SRIR0A4N7WX",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P660",
+  "managedBy": "Srivarshini Venkatasubramanian",
+  "bankName": "RupEase Bank",
+  "ifsc": "SRIV0D8P2KL",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P632",
+  "managedBy": "Subburaj Velusamy",
+  "bankName": "Subbu Bank",
+  "ifsc": "SUBB0F3Y6LP",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P627",
+  "managedBy": "Suveda Rasmi",
+  "bankName": "Silvercrest Bank",
+  "ifsc": "SUVE0K7Q4NP",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P670",
+  "managedBy": "Varsha Commuri",
+  "bankName": "Commuri Bank",
+  "ifsc": "VARS0T2M9BQ",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P645",
+  "managedBy": "Vidhya Nagarajan",
+  "bankName": "Jetpay Bank",
+  "ifsc": "VIDH0C5R8PX",
+  "baseUrl": ""
+ },
+ {
+  "bankId": "P651",
+  "managedBy": "Vinayatha Thirumalareddy",
+  "bankName": "Finova Bank",
+  "ifsc": "VINA0W4D6GQ",
+  "baseUrl": ""
+ }
+]
