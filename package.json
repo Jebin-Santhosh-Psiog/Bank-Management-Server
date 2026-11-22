@@ -1,0 +1,20 @@
+{
+  "name": "x42-switch",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.js",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "mock:a": "node mock-bank/index.js ABCB 9001",
+    "mock:b": "node mock-bank/index.js XYZB 9002",
+    "e2e": "node scripts/e2e.js",
+    "seed": "node scripts/seed.js banks.json"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "firebase-admin": "^13.0.0"
+  }
+}

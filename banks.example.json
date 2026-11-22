@@ -1,0 +1,4 @@
+[
+  { "bankCode": "ABCB", "bankName": "ABC Bank", "baseUrl": "https://abc-bank.example.com" },
+  { "bankCode": "BCDB", "bankName": "BCD Bank", "baseUrl": "https://bcd-bank.example.com" }
+]

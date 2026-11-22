@@ -1,0 +1,7 @@
+node_modules
+.env
+serviceAccount*.json
+keys.csv
+.git
+mock-bank
+scripts
