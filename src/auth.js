@@ -11,7 +11,7 @@ const admin = (req, res, next) => {
 }
 
 const bank = async (req, res, next) => {
-  const k = req.get('x-api-key'), c = (req.get('x-bank-code') || '').toUpperCase()
+  const k = req.get('x-api-key'), c = (req.get('x-bank-id') || '').toUpperCase()
   if (!k || !c) return deny(res)
   const d = await banks.doc(c).get()
   if (!d.exists) return deny(res)

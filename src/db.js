@@ -12,10 +12,14 @@ const ts = () => admin.firestore.FieldValue.serverTimestamp()
 const banks = db.collection('banks')
 const txns = db.collection('transactions')
 
+const IFSC = /^[A-Z]{4}0[A-Z0-9]{6}$/
+
 const byIfsc = async i => {
-  if (!/^[A-Z]{4}0[A-Z0-9]{6}$/.test(i || '')) return null
-  const d = await banks.doc(i.slice(0, 4)).get()
-  return d.exists && d.data().status === 'ACTIVE' ? d.data() : null
+  if (!IFSC.test(i || '')) return null
+  const s = await banks.where('ifsc', '==', i).limit(1).get()
+  if (s.empty) return null
+  const b = s.docs[0].data()
+  return b.status === 'ACTIVE' && b.baseUrl ? b : null
 }
 
 const move = (id, to, why = null, from = ['PENDING']) =>
@@ -34,4 +38,4 @@ const out = x => {
   return { ...x, createdAt: t(x.createdAt), updatedAt: t(x.updatedAt) }
 }
 
-module.exports = { db, ts, banks, txns, byIfsc, move, out }
+module.exports = { db, ts, banks, txns, byIfsc, move, out, IFSC }

@@ -3,7 +3,7 @@ const { txns, ts, byIfsc, move, out } = require('../db')
 const { bank } = require('../auth')
 const call = require('../call')
 
-const mine = (b, i) => typeof i === 'string' && i.startsWith(b.ifscPrefix)
+const mine = (b, i) => i === b.ifsc
 
 r.post('/validate', bank, async (req, res) => {
   const { ifsc, accountNo } = req.body ?? {}
@@ -19,9 +19,9 @@ r.post('/validate', bank, async (req, res) => {
 
 r.post('/transfer', bank, async (req, res) => {
   const { txnId, fromIfsc, fromAccount, toIfsc, toAccount, amount } = req.body ?? {}
-  if (!/^[A-Za-z0-9_-]{6,50}$/.test(txnId || '') || !fromAccount || !toAccount || !(+amount > 0))
+  if (!/^[A-Za-z0-9_-]{6,60}$/.test(txnId || '') || !fromAccount || !toAccount || !Number.isInteger(amount) || amount <= 0)
     return res.status(400).json({ code: 'INVALID_REQUEST' })
-  if (!txnId.startsWith(req.bank.bankCode + '-')) return res.status(400).json({ code: 'TXN_ID_PREFIX', reason: `txnId must start with ${req.bank.bankCode}-` })
+  if (!txnId.startsWith(req.bank.bankId + '-')) return res.status(400).json({ code: 'TXN_ID_PREFIX', reason: `txnId must start with ${req.bank.bankId}-` })
   if (!mine(req.bank, fromIfsc)) return res.status(403).json({ code: 'IFSC_MISMATCH' })
   const to = await byIfsc(toIfsc)
   if (!to) return res.status(404).json({ code: 'INVALID_BANK' })

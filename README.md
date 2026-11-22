@@ -20,17 +20,17 @@ npm run e2e          # 10 end-to-end checks, needs all three running
 
 ## Endpoints
 
-Bank calls carry `x-bank-code` + `x-api-key`. Admin calls carry `x-admin-key`.
+Bank calls carry `x-bank-id` (e.g. `P657`) + `x-api-key`. Admin calls carry `x-admin-key`.
 
 | Method | Path | Auth | Purpose |
 | --- | --- | --- | --- |
 | GET | `/x42/health` | none | Switch is up |
-| POST | `/x42/banks/register` | admin | `{bankCode, bankName, baseUrl}` → returns `apiKey` once |
-| PATCH | `/x42/banks/:code` | admin | Change `baseUrl` or `status` |
-| POST | `/x42/banks/:code/rotate-key` | admin | Issue a new API key |
-| GET | `/x42/banks` | bank | Directory: code, name, IFSC prefix |
+| POST | `/x42/banks/register` | admin | `{bankId, bankName, ifsc, baseUrl?}` → returns `apiKey` once; INACTIVE until it has a `baseUrl` |
+| PATCH | `/x42/banks/:bankId` | admin | Set `baseUrl` and/or `status` (`ACTIVE` needs a `baseUrl`) |
+| POST | `/x42/banks/:bankId/rotate-key` | admin | Issue a new API key |
+| GET | `/x42/banks` | bank | Directory of ACTIVE banks: bankId, bankName, ifsc |
 | POST | `/x42/validate` | bank | `{ifsc, accountNo}` → `{valid, maskedName}` |
-| POST | `/x42/transfer` | bank | `{txnId, fromIfsc, fromAccount, toIfsc, toAccount, amount}` |
+| POST | `/x42/transfer` | bank | `{txnId, fromIfsc, fromAccount, toIfsc, toAccount, amount}`, amount = whole paise |
 | GET | `/x42/transfers/:txnId` | bank | Status; re-checks the receiver if PENDING |
 | POST | `/x42/transfers/:txnId/reverse` | bank (sender) | Reverse a PENDING or SUCCESS transfer |
 
@@ -47,11 +47,15 @@ X42 calls these with header `x-switch-key: <SWITCH_KEY>`; banks must reject call
 | GET | `/interbank/status/:txnId` | | `{status}` |
 | POST | `/interbank/reverse` | `{txnId}` | `{status: "REVERSED"}` |
 
-IFSC format: 4-letter bank code + `0` + 6 letters/digits, e.g. `ABCB0A4N7WX`. txnId must start with the sending bank code + `-`, e.g. `ABCB-5f2c...` (globally unique).
+Banks are identified by `bankId` (e.g. `P657`) and their full IFSC (e.g. `JEBI0D3Q8LP`: 4 letters + zero + 6 letters/digits). `txnId` must start with the sending bankId + `-`, e.g. `P657-5f2c...`. `amount` is an integer in paise (₹500 = 50000).
 
 ## Onboard banks
 
-Fill `banks.json` (copy `banks.example.json`), then `npm run seed`. Keys land in `keys.csv`: send each bank only its own key, delete the file after.
+`banks.json` already holds all 50 banks (bankId, name, IFSC, owner) with empty `baseUrl`. Run `npm run seed` against the live switch: every bank is registered INACTIVE and its key lands in `keys.csv`. Send each person only their own key, then delete the file. When a bank shares its backend URL, activate it:
+
+```bash
+curl -X PATCH $X42_URL/x42/banks/P657 -H "content-type: application/json" -H "x-admin-key: $ADMIN_KEY" -d '{"baseUrl":"https://fleeca.onrender.com","status":"ACTIVE"}'
+```
 
 ## Deploy
 
